@@ -53,8 +53,8 @@ export async function POST(request: NextRequest) {
         problemSolved,
         howUsed,
         result,
-        proofLinks: proofLinks || [],
-        proofImages: [],
+        proofLinks: JSON.stringify(proofLinks || []),
+        proofImages: JSON.stringify([]),
         verified: false,
       },
     })

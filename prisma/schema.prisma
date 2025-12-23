@@ -173,8 +173,8 @@ model Certification {
   problemSolved   String
   howUsed         String
   result          String
-  proofImages     String[]
-  proofLinks      String[]
+  proofImages     String   @default("[]")
+  proofLinks      String   @default("[]")
   verified        Boolean  @default(false)
   createdAt       DateTime @default(now())
   updatedAt       DateTime @updatedAt
