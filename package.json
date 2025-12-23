@@ -1,0 +1,51 @@
+{
+  "name": "master_card",
+  "version": "1.0.0",
+  "description": "A card-based debugging &amp; solution marketplace MVP. Share, reuse, and validate real-world debugging patterns with structured cards, reviews, and trust scores.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SeobinChoi/Master_Card.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/SeobinChoi/Master_Card/issues"
+  },
+  "homepage": "https://github.com/SeobinChoi/Master_Card#readme",
+  "dependencies": {
+    "@auth/prisma-adapter": "^2.11.1",
+    "@prisma/adapter-pg": "^7.2.0",
+    "@prisma/client": "^7.2.0",
+    "@tailwindcss/postcss": "^4.1.18",
+    "@types/node": "^25.0.3",
+    "@types/nodemailer": "^7.0.4",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "autoprefixer": "^10.4.23",
+    "dotenv": "^17.2.3",
+    "next": "^16.1.1",
+    "next-auth": "^5.0.0-beta.30",
+    "nodemailer": "^7.0.12",
+    "pg": "^8.16.3",
+    "postcss": "^8.5.6",
+    "prisma": "^7.2.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1",
+    "tailwindcss": "^4.1.18",
+    "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.16.0"
+  }
+}
