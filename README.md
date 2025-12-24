@@ -24,7 +24,8 @@ A curated knowledge card marketplace inspired by Kickstarter/Wadiz project detai
 ## Getting Started
 
 ### Prerequisites
-- Node.js 18+ and npm
+- **Node.js 20.19+ or 22.12+** (Prisma CLI requires these versions; 22.11.0 and earlier 22.x releases will fail installs.)
+- npm
 - PostgreSQL database
 
 ### Installation
@@ -52,9 +53,11 @@ Edit `.env` with your configuration:
 
 4. Set up the database:
 ```bash
-npx prisma migrate dev
-npx prisma generate
+ npx prisma migrate dev
+ npx prisma generate
 ```
+
+> **Tip:** Run `npm install` **before** Prisma commands so `dotenv` and other dependencies are available. If you see `Cannot find module 'dotenv/config'`, reinstall dependencies after upgrading Node to a supported version.
 
 5. Run the development server:
 ```bash
